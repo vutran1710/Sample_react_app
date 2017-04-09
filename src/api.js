@@ -11,7 +11,6 @@ const api_endpoints = {
   }
 }
 
-// const api = api_endpoints[ENV]
-const api = api_endpoints.development
+const api = api_endpoints[ENV]
 
 export default api

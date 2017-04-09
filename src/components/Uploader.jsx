@@ -14,29 +14,28 @@ class Uploader extends Component {
 
   uploadFile = f => {
     const { onChange } = this.props.input
-    onChange('http://lorempixel.com/400/300/')
-    // const refType = fileExtension(f.target.files[0].name)
+    const refType = fileExtension(f.target.files[0].name)
 
-    // if (refType !== 'png' && refType !== 'jpg') {
-    //   alert('Not Image File')
-    //   return
-    // }
+    if (refType !== 'png' && refType !== 'jpg') {
+      alert('Not Image File')
+      return
+    }
     
-    // this.setState({ uploading: true, imageRef: null })
-    // const refName = `${shortid.generate()}.${refType}`
+    this.setState({ uploading: true, imageRef: null })
+    const refName = `${shortid.generate()}.${refType}`
 
-    // const productRef = this.props.firebase.storage().ref(`${api.storage}/${refName}`)
-    // productRef.put(f.target.files[0]).then(sp => {
-    //   if (sp.f === 'success') {
-    //     productRef.getDownloadURL().then(
-    //       imageRef => {
-    //         onChange(imageRef)
-    //         this.setState({ uploading: false, error: '' })
-    //     })
-    //   } else {
-    //     this.setState({ uploading: false, error: 'Error uploading file' })
-    //   }
-    // })
+    const productRef = this.props.firebase.storage().ref(`${api.storage}/${refName}`)
+    productRef.put(f.target.files[0]).then(sp => {
+      if (sp.f === 'success') {
+        productRef.getDownloadURL().then(
+          imageRef => {
+            onChange(imageRef)
+            this.setState({ uploading: false, error: '' })
+        })
+      } else {
+        this.setState({ uploading: false, error: 'Error uploading file' })
+      }
+    })
   }
 
   render() {
