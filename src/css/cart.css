@@ -1,0 +1,92 @@
+.cart-container {
+  background-color: rgba(255, 255, 255, .2);
+  border: solid 2px white;
+  position: relative;
+  display: block;
+  width: calc(100vw - 20%);
+  height: calc(100vh - 6rem);
+  overflow-y: auto;
+  box-sizing: border-box;
+  left: 10%;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.cartlist {
+  color: white;
+}
+
+.cartlist.-left {
+  padding: 0;
+  height: 100%;
+}
+
+.flow-container {
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.flow-container:hover {
+  overflow-y: auto;
+}
+
+.rowlist {
+  padding: 10px;
+  border-bottom: solid 1px lightgrey;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+}
+
+.rowlist:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, .7);
+  transition: color .3s, background-color .3s;
+}
+
+.rowlist button {
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-color: grey;
+  border-radius: 49%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: lightgrey;
+  cursor: pointer;
+  transition: color .4s, background-color .2s, border-color .3s;
+}
+
+.rowlist button:hover {
+  background-color: crimson;
+  border-color: darkred;
+  color: white;
+  transition: color .4s, background-color .2s, border-color .3s;
+}
+
+.cartlist.-right {
+  background-color: rgba(255, 255, 255, .9);
+  color: grey;
+  height: 100%;
+  border-left: solid 3px firebrick;
+}
+
+@media screen and (max-width: 500px) {
+  .cart-container {
+    left: 5%;
+    width: calc(100vw - 10%);
+    border-width: 1px;
+  }
+
+  .cartlist.-left {
+    height: 70% !important;
+  }
+
+  .cartlist.-right {
+    border: none;
+    border-top: solid 4px firebrick;
+    height: 30% !important;
+  }
+}

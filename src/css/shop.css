@@ -1,0 +1,30 @@
+.shopform {
+  padding-top: 60px
+}
+
+.-filter button {
+  cursor: pointer;
+  transition: background-color .5s, color .6s;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.sidebar .Select-value * {
+  color: white !important;
+}
+
+form .catalogue {
+  height: calc(100vh - 65px);
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.-filter i {
+  font-size: 1.3rem;
+}

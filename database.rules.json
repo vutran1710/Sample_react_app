@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "products": {
+      ".read": true,
+      ".write": "auth != null",
+      ".indexOn": ["timestamp", "category"]
+    },
+    "dev": {
+      ".read": true,
+      ".write": "auth != null",
+      ".indexOn": ["timestamp", "category"]
+    }
+  }
+}

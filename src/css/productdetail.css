@@ -1,0 +1,90 @@
+.detailform {
+    border-radius: 3px;
+}
+
+.detailform .title {
+    font-family: 'PT Sans Narrow', cursive;
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+}
+
+.detailform hr {
+    margin-bottom: 1rem;
+}
+
+.detailform .btn-reset {
+    color: dimgray;
+    font-size: .8rem;
+    line-height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: solid 1px whitesmoke;
+    text-align: center;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.detailform .btn-reset.disabled {
+    color: gainsboro;
+    background-color: rgba(255, 255, 255, .3);
+    border: solid 1px gainsboro;
+    cursor: not-allowed;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.detailpic {
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px grey;
+    background-color: rgba(255, 255, 255, .15);
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.detaillist {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.detaillist li {
+    color: lightgrey;
+    margin-bottom: 1rem;
+}
+
+.detaillist li:nth-child(1) {
+    display: inline-block;
+    width: auto;
+    padding: 3px 10px;
+    color: white;
+    font-weight: 800;
+    border: solid 1px black;
+    background-color: darkred;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 500px) {
+    .detailform {
+        margin: 3rem 1rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .detailform {
+        margin: 3rem 2rem;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1050px) {
+    .detailform {
+        margin: 3rem 7rem;
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    .detailform {
+        margin: 3rem 10rem;
+    }
+}

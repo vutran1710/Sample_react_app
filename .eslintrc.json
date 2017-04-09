@@ -1,0 +1,21 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "semi": "off",
+        "no-confusing-arrow": "off",
+        "comma-dangle": "off",
+        "no-mixed-operators": "off",
+        "react/forbid-prop-types": "off",
+        "camelcase": "off",
+        "react/jsx-filename-extension": "off",
+        "arrow-parens": "off",
+        "no-unused-expressions": "off",
+        "no-underscore-dangle": "off",
+        "no-fallthrough": "off"
+    }
+}

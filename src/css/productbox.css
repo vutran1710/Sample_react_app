@@ -1,0 +1,131 @@
+/*Css for ProductItemBox*/
+.product-grid {
+  padding: 0 1rem 1.7rem 1rem;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  box-sizing: border-box;
+  border: solid 1px transparent;
+  color: black;
+  position: relative;
+}
+
+.linkwrap .productoverlay:hover {
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+  transition: box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+}
+
+.linkwrap {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.productoverlay {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: solid 1px dimgrey;
+  padding: 2px;
+  background-color: transparent;
+  transition: box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+}
+
+.productoverlay img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.productoverlay .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  color: black;
+  background-color: rgba(255, 255, 255, .8);
+  opacity: 0;
+  transition: opacity .2s;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.productoverlay .info:hover {
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+.sale-danger {
+  position: absolute;
+  z-index: 1;
+}
+
+.sale-danger img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.sale-danger text {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: white;
+  font-weight: 900;
+}
+
+.info {
+  font-weight: 900;
+  text-align: right;
+}
+
+.quickadd {
+  position: relative;
+  top: -2rem;
+  height: 2rem;
+  width: 100%;
+  padding: 3px;
+  background-color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  border: transparent;
+  z-index: 4;
+  cursor: pointer;
+  color: grey;
+}
+
+.quickadd:disabled {
+  cursor: not-allowed;
+  color: gainsboro;
+}
+
+.quickadd:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 450px) {
+  .product-grid {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 850px) {
+  .product-grid {
+    height: 11rem;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .product-grid {
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  .product-grid {
+    height: 14rem;
+  }
+}
