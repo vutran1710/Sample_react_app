@@ -1,7 +1,7 @@
 # SAMPLE REACT SHOP-APP
 
 
-This is a sample e-commerce shop Single-Page-App(SPA) made with **ReactJS** and **[create-react-app][CRA]** and tools in order to test and demonstrate how React-app should normally be structured and work. The working app can be found visiting http://e47shop.firebaseapp.com
+This is a sample e-commerce shop Single-Page-App(SPA) made with **ReactJS** and **creact-react-app** by Facebook and tools in order to test and demonstrate how React-app should normally be structured and work. The working app can be found visiting http://e47shop.firebaseapp.com
 Basically the app was made using very popular and essential libraries and tools for most React SPA, including:
 
   - create-react-app by Facebook, with Babel and Webpack included
@@ -62,7 +62,5 @@ MIT
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job.)
    [Fks]: <https://jsonplaceholder.typicode.com/>
    [Lpx]: <http://lorempixel.com/>
-   [RIS]: <https://github.com/CassetteRocks/react-infinite-scroller/>
-   [Rsk]: <https://github.com/reactjs/react-modal/>
-   [CRA]: <https://github.com/facebookincubator/create-react-app />
+   [RIS]: <https://github.com/facebookincubator/create-react-app />
    >
